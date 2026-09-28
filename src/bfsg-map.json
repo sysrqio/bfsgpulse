@@ -1,0 +1,280 @@
+{
+  "rules": {
+    "image-alt": {
+      "wcag": "1.1.1",
+      "bfsg_ref": "9.1.1.1",
+      "en301549_ref": "9.1.1.1",
+      "title": "Non-text Content"
+    },
+    "input-image-alt": {
+      "wcag": "1.1.1",
+      "bfsg_ref": "9.1.1.1",
+      "en301549_ref": "9.1.1.1",
+      "title": "Non-text Content (input image)"
+    },
+    "area-alt": {
+      "wcag": "1.1.1",
+      "bfsg_ref": "9.1.1.1",
+      "en301549_ref": "9.1.1.1",
+      "title": "Image map areas"
+    },
+    "object-alt": {
+      "wcag": "1.1.1",
+      "bfsg_ref": "9.1.1.1",
+      "en301549_ref": "9.1.1.1",
+      "title": "Object alternative text"
+    },
+    "svg-img-alt": {
+      "wcag": "1.1.1",
+      "bfsg_ref": "9.1.1.1",
+      "en301549_ref": "9.1.1.1",
+      "title": "SVG image alternative"
+    },
+    "audio-caption": {
+      "wcag": "1.2.1",
+      "bfsg_ref": "9.1.2.1",
+      "en301549_ref": "9.1.2.1",
+      "title": "Audio-only and Video-only (Prerecorded)"
+    },
+    "video-caption": {
+      "wcag": "1.2.2",
+      "bfsg_ref": "9.1.2.2",
+      "en301549_ref": "9.1.2.2",
+      "title": "Captions (Prerecorded)"
+    },
+    "video-description": {
+      "wcag": "1.2.5",
+      "bfsg_ref": "9.1.2.5",
+      "en301549_ref": "9.1.2.5",
+      "title": "Audio Description (Prerecorded)"
+    },
+    "html-has-lang": {
+      "wcag": "3.1.1",
+      "bfsg_ref": "9.3.1.1",
+      "en301549_ref": "9.3.1.1",
+      "title": "Language of Page"
+    },
+    "html-lang-valid": {
+      "wcag": "3.1.1",
+      "bfsg_ref": "9.3.1.1",
+      "en301549_ref": "9.3.1.1",
+      "title": "Valid language attribute"
+    },
+    "html-xml-lang-mismatch": {
+      "wcag": "3.1.1",
+      "bfsg_ref": "9.3.1.1",
+      "en301549_ref": "9.3.1.1",
+      "title": "xml:lang consistency"
+    },
+    "document-title": {
+      "wcag": "2.4.2",
+      "bfsg_ref": "9.2.4.2",
+      "en301549_ref": "9.2.4.2",
+      "title": "Page Titled"
+    },
+    "link-name": {
+      "wcag": "2.4.4",
+      "bfsg_ref": "9.2.4.4",
+      "en301549_ref": "9.2.4.4",
+      "title": "Link Purpose (In Context)"
+    },
+    "button-name": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "Name, Role, Value (buttons)"
+    },
+    "label": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Info and Relationships (labels)"
+    },
+    "label-title-only": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Visible label"
+    },
+    "form-field-multiple-labels": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Multiple form labels"
+    },
+    "color-contrast": {
+      "wcag": "1.4.3",
+      "bfsg_ref": "9.1.4.3",
+      "en301549_ref": "9.1.4.3",
+      "title": "Contrast (Minimum)"
+    },
+    "color-contrast-enhanced": {
+      "wcag": "1.4.6",
+      "bfsg_ref": "9.1.4.6",
+      "en301549_ref": "9.1.4.6",
+      "title": "Contrast (Enhanced)"
+    },
+    "heading-order": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Heading hierarchy"
+    },
+    "empty-heading": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Empty headings"
+    },
+    "page-has-heading-one": {
+      "wcag": "2.4.6",
+      "bfsg_ref": "9.2.4.6",
+      "en301549_ref": "9.2.4.6",
+      "title": "Headings and Labels"
+    },
+    "bypass": {
+      "wcag": "2.4.1",
+      "bfsg_ref": "9.2.4.1",
+      "en301549_ref": "9.2.4.1",
+      "title": "Bypass Blocks"
+    },
+    "region": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Landmark regions"
+    },
+    "landmark-one-main": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Single main landmark"
+    },
+    "tabindex": {
+      "wcag": "2.4.3",
+      "bfsg_ref": "9.2.4.3",
+      "en301549_ref": "9.2.4.3",
+      "title": "Focus Order"
+    },
+    "focus-order-semantics": {
+      "wcag": "2.4.3",
+      "bfsg_ref": "9.2.4.3",
+      "en301549_ref": "9.2.4.3",
+      "title": "Focus order semantics"
+    },
+    "frame-title": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "Frame title"
+    },
+    "meta-viewport": {
+      "wcag": "1.4.4",
+      "bfsg_ref": "9.1.4.4",
+      "en301549_ref": "9.1.4.4",
+      "title": "Resize text"
+    },
+    "meta-refresh": {
+      "wcag": "2.2.1",
+      "bfsg_ref": "9.2.2.1",
+      "en301549_ref": "9.2.2.1",
+      "title": "Timing Adjustable"
+    },
+    "duplicate-id": {
+      "wcag": "4.1.1",
+      "bfsg_ref": "9.4.1.1",
+      "en301549_ref": "9.4.1.1",
+      "title": "Parsing (duplicate id)"
+    },
+    "duplicate-id-active": {
+      "wcag": "4.1.1",
+      "bfsg_ref": "9.4.1.1",
+      "en301549_ref": "9.4.1.1",
+      "title": "Duplicate active element id"
+    },
+    "duplicate-id-aria": {
+      "wcag": "4.1.1",
+      "bfsg_ref": "9.4.1.1",
+      "en301549_ref": "9.4.1.1",
+      "title": "Duplicate ARIA id"
+    },
+    "aria-allowed-attr": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "ARIA allowed attributes"
+    },
+    "aria-required-attr": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "ARIA required attributes"
+    },
+    "aria-valid-attr-value": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "Valid ARIA attribute values"
+    },
+    "aria-hidden-focus": {
+      "wcag": "4.1.2",
+      "bfsg_ref": "9.4.1.2",
+      "en301549_ref": "9.4.1.2",
+      "title": "Focusable content in aria-hidden"
+    },
+    "list": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "List structure"
+    },
+    "listitem": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "List item parent"
+    },
+    "definition-list": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Definition list structure"
+    },
+    "table-duplicate-name": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Table duplicate name"
+    },
+    "th-has-data-cells": {
+      "wcag": "1.3.1",
+      "bfsg_ref": "9.1.3.1",
+      "en301549_ref": "9.1.3.1",
+      "title": "Table headers"
+    },
+    "autocomplete-valid": {
+      "wcag": "1.3.5",
+      "bfsg_ref": "9.1.3.5",
+      "en301549_ref": "9.1.3.5",
+      "title": "Identify Input Purpose"
+    },
+    "scrollable-region-focusable": {
+      "wcag": "2.1.1",
+      "bfsg_ref": "9.2.1.1",
+      "en301549_ref": "9.2.1.1",
+      "title": "Keyboard (scrollable region)"
+    },
+    "keyboard": {
+      "wcag": "2.1.1",
+      "bfsg_ref": "9.2.1.1",
+      "en301549_ref": "9.2.1.1",
+      "title": "Keyboard accessible"
+    },
+    "no-autoplay-audio": {
+      "wcag": "1.4.2",
+      "bfsg_ref": "9.1.4.2",
+      "en301549_ref": "9.1.4.2",
+      "title": "Audio Control"
+    }
+  }
+}

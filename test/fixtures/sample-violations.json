@@ -1,0 +1,56 @@
+[
+  {
+    "url": "https://shop.example/de/cart",
+    "issues": [
+      {
+        "code": "WCAG2AA.Principle1.Guideline1_1.1_1_1.H37",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Img element missing an alt attribute.",
+        "context": "<img src=\"/logo.png\">",
+        "selector": "img",
+        "runner": "axe",
+        "runnerExtras": {
+          "axeDescription": "image-alt"
+        }
+      },
+      {
+        "code": "WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Elements must have sufficient color contrast.",
+        "context": "<a href=\"/buy\">Buy</a>",
+        "selector": "a",
+        "runner": "axe",
+        "runnerExtras": {
+          "axeDescription": "color-contrast"
+        }
+      },
+      {
+        "code": "WCAG2AA.Principle2.Guideline2_4.2_4_2.H25",
+        "type": "warning",
+        "typeCode": 2,
+        "message": "Document should have a title element.",
+        "runner": "axe",
+        "runnerExtras": {
+          "axeDescription": "document-title"
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://shop.example/de/checkout",
+    "issues": [
+      {
+        "code": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91",
+        "type": "error",
+        "typeCode": 1,
+        "message": "Links must have discernible text.",
+        "runner": "axe",
+        "runnerExtras": {
+          "axeDescription": "link-name"
+        }
+      }
+    ]
+  }
+]

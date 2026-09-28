@@ -1,0 +1,57 @@
+{
+  "name": "@sysrqio/bfsgpulse",
+  "version": "0.1.0",
+  "description": "BFSG/EAA accessibility evidence CLI wrapping pa11y-ci",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "bfsgpulse": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "bfsg-map.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sysrqio/bfsgpulse.git"
+  },
+  "keywords": [
+    "accessibility",
+    "bfsg",
+    "wcag",
+    "pa11y",
+    "axe-core",
+    "eaa",
+    "en301549"
+  ],
+  "scripts": {
+    "build": "tsc && cp src/bfsg-map.json dist/bfsg-map.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "execa": "^9.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

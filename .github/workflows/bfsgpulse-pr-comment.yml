@@ -1,0 +1,63 @@
+# Example: post bfsgpulse markdown summary as a PR comment (offline fixture shown;
+# replace with a live audit when Chromium is available in your runner image).
+name: BfsgPulse PR comment (example)
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Run bfsgpulse (fixture demo)
+        env:
+          BFSGPULSE_FIXTURE: test/fixtures/sample-violations.json
+        run: |
+          node dist/cli.js audit \
+            --urls https://example.com \
+            --output markdown \
+            --out-file bfsgpulse-report.md \
+            --threshold 0 || true
+      - name: Comment on PR
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.existsSync('bfsgpulse-report.md')
+              ? fs.readFileSync('bfsgpulse-report.md', 'utf8')
+              : 'bfsgpulse: no report generated';
+            const marker = '<!-- bfsgpulse-report -->';
+            const full = `${marker}\n## Accessibility (BfsgPulse)\n\n${body}`;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find((c) => c.body?.includes(marker));
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: full,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: full,
+              });
+            }
